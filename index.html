@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <input id="display">
+        <button class="btn" onclick="num(1)">1</button>
+        <button class="btn" onclick="num(2)">2</button>
+        <button class="btn" onclick="num(3)">3</button>
+        <button class="btn" onclick="num(4)">4</button>
+        <button class="btn" onclick="num(5)">5</button>
+        <button class="btn" onclick="num(6)">6</button>
+        <button class="btn" onclick="num(7)">7</button>
+        <button class="btn" onclick="num(8)">8</button>
+        <button class="btn" onclick="num(9)">9</button>
+        <button class="btn" onclick="num(0)">0</button>
+
+
+        <button class="btn" onclick="num('+')">+</button>
+        <button class="btn" onclick="num('-')">-</button>
+        <button class="btn" onclick="num('*')">*</button>
+        <button class="btn" onclick="num('/')">/</button>
+        <button class="btn" onclick="num('.')">*</button>
+        <button class="btn" onclick="calculate()">=</button>
+        <button class="btn" onclick="Del()">Del</button>
+
+        <button onclick="Clearance()">clear</button>
+    </section>
+    
+    <script>
+        function num(numbering){
+            document.getElementById('display').value += numbering
+        }
+
+        function calculate(){
+            let code = document.getElementById('display').value;
+            let solve = eval(code)
+            document.getElementById('display').value = solve
+        }
+
+        function Del(){
+            const fetch = document.getElementById('display').value;
+            const throwaway =  fetch.slice(0, -1)
+            document.getElementById('display').value = throwaway
+        }
+
+         function Clearance(){
+            const all = document.getElementById('display').value;
+            display.value=''
+         }
+        //     const dissolve = all.slice(-1, -1)
+        //     document.getElementById('display').value = dissolve
+
+        //  const throwaway = document.getElementById('display').value
+        //     display.value = ""
+        // }
+        
+
+
+    </script>
+</body>
+</html>

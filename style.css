@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+section{
+    margin: 150px 500px;
+    background-color: black;
+    border-radius: 20px;
+    /* height: 100vh; */
+}
+
+.btn{
+    padding: 20px;
+    width: 70px;
+    gap: 20px;
+    border-radius: 20px;
+    
+}
+
+.btn div{
+    padding: 20px;
+    gap: 20px;
+}
+
+button{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+
+}
+
+button:hover{
+    background-color: yellow;
+    color: grey;
+    cursor: pointer;
+}
+
+input{
+    padding: 20px;
+    width: 300px;
+    margin-left: 30px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    background-color: rgba(251, 251, 255, 0.747);
+    border-radius: 10px;
+}
+
+@media (max-width: 880px) {
+    section{
+        margin: 10px;
+    }
+    
+}
